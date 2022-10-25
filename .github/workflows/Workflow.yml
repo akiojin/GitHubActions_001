@@ -1,0 +1,14 @@
+﻿name: 簡単な例
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  Build:
+    runs-on: macos-latest
+
+    steps:
+      - run: |
+          echo Hello, World!!
